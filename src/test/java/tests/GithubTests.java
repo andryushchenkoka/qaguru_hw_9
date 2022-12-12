@@ -67,4 +67,16 @@ public class GithubTests extends BaseTest {
             $(withText(ISSUE_TEXT)).should(Condition.exist);
         });
     }
+
+    @Test
+    @DisplayName("Issue search - WebSteps")
+    public void issueSearchWebStepsTest() {
+
+        new WebSteps().openMainPage(BASE_URL)
+                .searchForRepository(REPOSITORY_PATH)
+                .clickOnRepoLink(REPOSITORY_PATH)
+                .openIssuesTab()
+                .shouldSeeIssueWithNumber(ISSUE_TEXT);
+
+    }
 }
