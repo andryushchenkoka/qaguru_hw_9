@@ -2,8 +2,9 @@ package tests.StepApproach;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import tests.BaseTest;
 
-public class StepTest {
+public class StepTest extends BaseTest {
 
     private final String BASE_URL = "https://github.com/",
             REPOSITORY_PATH = "andryushchenkoka/qaguru_hw_9",

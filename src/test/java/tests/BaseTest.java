@@ -13,6 +13,7 @@ public class BaseTest {
         Configuration.holdBrowserOpen = false;
         Configuration.headless = false;
 
+        // Логгер добавляет в отчет скриншоты, копии страниц, подробный список шагов
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 }
