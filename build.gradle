@@ -24,6 +24,7 @@ ext {
     selenideVersion = "6.9.0"
     junitVersion = "5.8.2"
     aspectjWeaverVersion = "1.9.8"
+    allureSelenideVersion = "2.19.0"
 }
 
 repositories {
@@ -34,7 +35,8 @@ dependencies {
     testImplementation(
             "org.junit.jupiter:junit-jupiter:${junitVersion}",
             "com.codeborne:selenide:${selenideVersion}",
-            "org.aspectj:aspectjweaver:${aspectjWeaverVersion}"
+            "org.aspectj:aspectjweaver:${aspectjWeaverVersion}",
+            "io.qameta.allure:allure-selenide:${allureSelenideVersion}"
     )
 }
 

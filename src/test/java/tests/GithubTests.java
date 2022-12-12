@@ -1,6 +1,8 @@
 package tests;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,11 +15,14 @@ public class GithubTests extends BaseTest {
 
     private final String BASE_URL = "https://github.com/",
             REPOSITORY_PATH = "andryushchenkoka/qaguru_hw_9",
-            ISSUE_TEXT = "#1";
+            ISSUE_TEXT = "#2";
 
     @Test
     @DisplayName("Issue search")
     public void issueSearchTest() {
+
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
         open(BASE_URL);
 
         $("input[name = 'q']").click();
