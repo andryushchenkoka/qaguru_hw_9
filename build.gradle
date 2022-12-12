@@ -11,7 +11,7 @@ allure {
         version.set("2.19.0");                  // версия Allure
     }
     adapter {                                   // секция отвечает за папку build/allure-results
-        aspectjWeaver.set(true)
+        aspectjWeaver.set(true)                 // отвечает за аннотацию @Step
         frameworks {
             junit5 {                            // название фреймворка (junit4/5, testng))
                 adapterVersion.set("2.19.0")    // версия интеграции фреймворка и Allure
