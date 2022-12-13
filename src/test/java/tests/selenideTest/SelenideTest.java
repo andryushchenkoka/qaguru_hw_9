@@ -1,7 +1,6 @@
-package tests.SelenideApproach;
+package tests.selenideTest;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.BaseTest;
@@ -12,14 +11,6 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
 public class SelenideTest extends BaseTest {
-
-    private final String BASE_URL = "https://github.com/",
-            REPOSITORY_PATH = "andryushchenkoka/qaguru_hw_9",
-            ISSUE_TEXT = "#2";
-
-    private final SelenideElement SEARCH_LINE = $("input[name = 'q']"),
-            ISSUE_TAB = $("#issues-tab");
-
 
     @Test
     @DisplayName("Issue search - Selenide")

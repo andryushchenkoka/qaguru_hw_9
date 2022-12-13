@@ -1,4 +1,4 @@
-package tests.StepApproach;
+package tests.stepTest;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;

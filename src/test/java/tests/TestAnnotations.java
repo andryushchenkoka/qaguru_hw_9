@@ -4,7 +4,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class TestMarking {
+public class TestAnnotations {
 
     @Test
     @Feature("Здесь отображается Feature")
